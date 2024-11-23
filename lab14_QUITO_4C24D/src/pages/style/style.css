@@ -1,0 +1,144 @@
+
+body {
+    background: #f4f7fa;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.login-container {
+    max-width: 420px;
+    width: 100%;
+    padding: 20px;
+    background: #ffffff; 
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+}
+
+.login-card {
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 30px;
+    margin: 0 auto;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.login-card .card-title {
+    font-size: 36px;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+/* Campos de entrada */
+.login-card .form-control {
+    border-radius: 10px;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #dcdfe3;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+    background-color: #f9fafb;
+}
+
+/* Estilos cuando el input está enfocado */
+.login-card .form-control:focus {
+    border-color: #4e73df;
+    box-shadow: 0 0 10px rgba(78, 115, 223, 0.3);
+    outline: none;
+    background-color: #ffffff;
+}
+
+/* Botón de Ingresar */
+.login-card .btn-primary {
+    background: linear-gradient(to right, #e0f7fa, #80deea, #e0f7fa);
+    border-color: #4e73df;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Estilos al pasar el mouse por el botón */
+.login-card .btn-primary:hover {
+    background: linear-gradient(to right, #e0f7fa, #069fad, #e0f7fa);
+    border-color: #2e59d9;
+}
+
+/* Checkbox (Recordarme) */
+.login-card .form-check {
+    display: flex;
+    align-items: center;
+}
+
+.login-card .form-check-label {
+    font-size: 14px;
+    color: #6c757d;
+    margin-left: 10px;
+}
+
+.login-card .form-check-input {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border-radius: 4px;
+    border: 3px solid #80deea;
+    background-color: #fff;
+    cursor: pointer;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Estilos cuando el checkbox está marcado */
+.login-card .form-check-input:checked {
+    background-color: #80deea;
+    border-color: #4e73df;
+}
+
+.login-card .form-check-input:hover {
+    border-color: #4e73df;
+    box-shadow: 0 0 5px rgba(78, 115, 223, 0.3);
+}
+
+/* Enlace de Recuperar Contraseña */
+.login-card a {
+    text-decoration: none;
+    color: #4e73df;
+    font-size: 14px;
+}
+
+.login-card a:hover {
+    text-decoration: underline;
+}
+
+/* Pie de página */
+.login-card .text-center {
+    font-size: 14px;
+    color: #6c757d;
+    margin-top: 30px;
+    text-align: center;
+}
+
+/* Responsividad */
+@media (max-width: 767px) {
+    .login-container {
+        padding: 10px;
+    }
+
+    .login-card {
+        padding: 25px;
+    }
+
+    .login-card .card-title {
+        font-size: 28px;
+    }
+}

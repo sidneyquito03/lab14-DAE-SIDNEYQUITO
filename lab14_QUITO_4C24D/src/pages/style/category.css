@@ -1,0 +1,149 @@
+/* category.css */
+
+/* Fondo de la página */
+body {
+    background: #f4f7fa; /* Fondo suave y claro */
+    font-family: 'Poppins', sans-serif; /* Usando la misma fuente para consistencia */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Contenedor de categorías */
+.container {
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Estilo de la tabla */
+.table-responsive {
+    background-color: #ffffff; /* Fondo blanco para la tabla */
+    border-radius: 12px; /* Bordes redondeados */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    padding: 20px; /* Espaciado interno */
+}
+
+/* Encabezado de la tabla */
+.table th {
+    background-color: #4e73df; /* Azul similar al login */
+    color: #ffffff; /* Texto blanco */
+    font-weight: bold;
+    text-shadow: 0 0 5px rgba(78, 115, 223, 0.3); /* Sombra suave */
+}
+
+/* Fila de la tabla */
+.table td {
+    background-color: #f9fafb; /* Fondo claro para las filas */
+    color: #6c757d; /* Texto gris suave */
+    border-top: 1px solid #ddd;
+    padding: 15px;
+    text-shadow: 0 0 3px rgba(78, 115, 223, 0.2); /* Sombra sutil */
+}
+
+/* Filas alternas */
+.table tr:nth-child(even) {
+    background-color: #e9ecef; /* Gris muy claro para filas pares */
+}
+
+/* Efecto hover en las filas */
+.table tbody tr:hover {
+    background-color: #8fc3ff; /* Azul suave de resaltado */
+    box-shadow: 0 0 10px rgba(112, 196, 255, 0.379); /* Sombra suave */
+}
+
+/* Título de la sección */
+h3.text-primary {
+    color: #4e73df; /* Azul primario */
+    text-shadow: 0 0 5px rgba(78, 115, 223, 0.3); /* Sombra suave */
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Estilo de los botones */
+.btn {
+    padding: 10px 20px;
+    border-radius: 10px; /* Bordes más suaves */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 8px rgba(78, 115, 223, 0.2); /* Sombra suave */
+    font-weight: bold;
+    background-color: #4e73df; /* Azul del login */
+    border: 2px solid #4e73df;
+    color: white;
+    text-transform: uppercase;
+}
+
+/* Efecto hover para los botones */
+.btn:hover {
+    transform: scale(1.05); /* Hace que los botones crezcan un poco */
+    box-shadow: 0 0 15px rgba(118, 148, 241, 0.8); /* Sombra de neón más suave */
+    background-color: #2e59d9; /* Azul más oscuro al pasar el mouse */
+}
+
+/* Botones específicos */
+.btn-warning {
+    background-color: #ffcc00; /* Amarillo brillante para los botones de advertencia */
+    border: 2px solid #ffcc00;
+    color: white;
+}
+
+.btn-danger {
+    background-color: #f72c3d; /* Rojo neón */
+    border: 2px solid #f72c3d;
+    color: white;
+}
+
+/* Iconos dentro de los botones */
+.btn i {
+    font-size: 1.2rem;
+    color: white;
+}
+
+/* Estilo para el botón de agregar "Nuevo" */
+.btn-primary {
+    background-color: #4e73df;
+    border: 2px solid #4e73df;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #2e59d9;
+}
+
+/* Pie de página */
+.text-center {
+    font-size: 14px;
+    color: #6c757d;
+    margin-top: 30px;
+    text-align: center;
+}
+
+/* Responsividad */
+@media (max-width: 767px) {
+    .container {
+        padding: 10px;
+    }
+
+    .table-responsive {
+        padding: 15px;
+    }
+
+    .table th {
+        font-size: 14px;
+    }
+
+    h3.text-primary {
+        font-size: 28px;
+    }
+
+    .btn {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
